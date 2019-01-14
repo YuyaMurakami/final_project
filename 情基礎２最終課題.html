@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <p>いかに最終課題を短時間で終わらせるか</p>
+    <script type="text/javascript">
+      alert("Hello");
+      function timeout_callback() {
+  alert("webサービスが反映されません");
+}
+
+setTimeout(timeout_callback,5000);
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap" type="text/javascript"></script>
+    <script type="text/javascript">
+    function initMap() {
+      var latlng = new google.maps.LatLng(35, 140);
+      var opt = {
+        zoom: 10,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      var map = new google.maps.Map(document.getElementById('map'), opt);
+    }
+    function timeout_callback() {
+  alert(
+("<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap" type="text/javascript"></script>
+<script type="text/javascript">
+function initMap() {
+  var latlng = new google.maps.LatLng(35, 140);
+  var opt = {
+    zoom: 10,
+    center: latlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(document.getElementById('map'), opt);");
+}
+
+setInterval(timeout_callback,1000);
+</script>
+  <script type="text/javascript">
+var word = prompt("授業が理解できているなら「はい」、理解できていないなら「いいえ」を入力してください。");
+switch (word) {
+  case "はい":
+    alert("この嘘つき。");
+    break;
+
+  case "いいえ":
+    alert("授業を聞いてください。");
+    break;
+
+  default:
+    alert("え…？");
+}
+  </script>
+    var _kihon = ['こ','れ','が','配','列'];
+
+console.log('初期値：' + _kihon);
+
+_kihon[5] = 'の';
+
+console.log('+1：' + _kihon);
+_kihon.push('追加');
+
+console.log('+1：' + _kihon);
+<script type="text/javascript">
+var Yes = 0;
+var No = 0;
+for (var i=0; i<10; i++) {
+  var YN = prompt("「Yes」または「No」を入力してください。眠い？");
+  if (YN == "男")
+    Yes = Yes + 1;
+  else
+    No = No +1;
+}
+alert("「眠い」" + Yes + "票、「眠くない」" + No + "票。これにて全要素盛り込み終了");
+</script>
+  </body>
+</html>
